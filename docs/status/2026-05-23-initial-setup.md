@@ -1,7 +1,7 @@
 # KF7ATW Website — Initial Setup
 
 **Date**: 2026-05-23
-**Status**: Live at http://kf7atw.com — HTTPS cert provisioning in progress
+**Status**: Complete — live at https://kf7atw.com
 
 ## Completed
 
@@ -14,17 +14,17 @@
 - CNAME file set for `kf7atw.com`
 - Cloudflare DNS configured via API (4x A records + www CNAME, DNS only)
 - Cloudflare SSL set to Full mode
-- Site verified live and serving content
-
-## Pending
-
-- HTTPS certificate provisioning by GitHub Pages (auto, takes a few minutes)
-- Enable HTTPS enforcement after cert is ready
-- Close GitHub issue #1
+- HTTPS cert provisioned and enforcement enabled
+- Custom design: PNW steel-blue + copper palette adapted from C6S website
+  - Dark navy header/footer with copper accent border
+  - Inter + JetBrains Mono typography
+  - Card components, dark code blocks, oscilloscope-green syntax highlighting
+  - WCAG AAA contrast ratios
+- Cloudflare API token stored in Key Vault as `cloudflare-global-dns-api-key`
 
 ## Next Steps
 
-- Customize Minima theme colors/styling
-- Add more project detail pages
-- Write blog posts about ongoing ham radio work
+- Add detailed project pages with links to repos
+- Write blog posts about ham radio activities and projects
 - Add QRZ badge or widget
+- Customize further (photos, grid locator map, equipment list)
