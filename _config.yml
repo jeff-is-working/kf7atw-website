@@ -1,0 +1,40 @@
+title: KF7ATW
+description: Ham radio activities, projects, and experiments by KF7ATW
+url: "https://kf7atw.com"
+baseurl: ""
+
+theme: minima
+
+author:
+  name: Jeff Records
+  email: kf7atw@arrl.net
+
+header_pages:
+  - projects.md
+  - activities.md
+  - about.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - docs
+  - CLAUDE.md
+  - LICENSE
