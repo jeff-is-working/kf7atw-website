@@ -1,7 +1,7 @@
 # KF7ATW Website — Initial Setup
 
 **Date**: 2026-05-23
-**Status**: In progress — awaiting DNS configuration at Cloudflare
+**Status**: Live at http://kf7atw.com — HTTPS cert provisioning in progress
 
 ## Completed
 
@@ -12,30 +12,14 @@
 - GitHub Actions workflow for Jekyll build/deploy
 - Filed GitHub issue #1 with acceptance criteria
 - CNAME file set for `kf7atw.com`
+- Cloudflare DNS configured via API (4x A records + www CNAME, DNS only)
+- Cloudflare SSL set to Full mode
+- Site verified live and serving content
 
-## Pending (Manual Steps)
+## Pending
 
-### Cloudflare DNS Configuration
-
-Log into Cloudflare dashboard for `kf7atw.com` and add these records:
-
-| Type  | Name | Value               | Proxy Status |
-|-------|------|---------------------|--------------|
-| A     | @    | 185.199.108.153     | DNS only     |
-| A     | @    | 185.199.109.153     | DNS only     |
-| A     | @    | 185.199.110.153     | DNS only     |
-| A     | @    | 185.199.111.153     | DNS only     |
-| CNAME | www  | jeff-is-working.github.io | DNS only |
-
-### Cloudflare SSL Settings
-
-- Set SSL/TLS mode to **Full** (not Full Strict)
-- Cloudflare proxy must be **OFF** (grey cloud / DNS only) for GitHub Pages HTTPS cert provisioning
-
-### After DNS Propagation
-
-- Verify site loads at https://kf7atw.com
-- Enable HTTPS enforcement in GitHub Pages settings
+- HTTPS certificate provisioning by GitHub Pages (auto, takes a few minutes)
+- Enable HTTPS enforcement after cert is ready
 - Close GitHub issue #1
 
 ## Next Steps
