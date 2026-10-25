@@ -20,7 +20,7 @@ bundle exec jekyll serve
 
 ## Deployment
 
-Push to `main` branch — GitHub Pages builds and deploys automatically.
+Merging to `main` makes GitHub Pages build and deploy automatically. Agents do not push to `main`, merge, or complete PRs; the user pushes and merges.
 
 ## Structure
 
@@ -33,7 +33,7 @@ docs/status/     # Session status files
 
 ## Workflow
 
-1. Plan changes, file GitHub issue
+1. Plan changes, file an ADO work item in project `personal-projects` (User Story or Bug; never open GitHub issues)
 2. Create feature branch
 3. Test locally with `bundle exec jekyll serve`
-4. PR to main, verify deploy
+4. Commit, open a PR to main, and give the user the push command; the user pushes and merges, then verifies the deploy
